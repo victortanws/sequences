@@ -2,17 +2,20 @@
 
 <ul>
   <li>
-    2, 4, 8 - obeys the rule
+    2, 4, 8 Obeys the rule
   </li>
-  <li>
-    3, 6, 12 - obeys the rule
-  </li>
-  <li>
-    1, 2, 4 - obeys the rule
-  </li>
-  <li>
-    3, 2, 4 - does not obey the rule
-  </li>
+
+  <% @guesses.each do |guess| %>
+    <li>
+      <%= guess.first %>, <%= guess.second %>, <%= guess.third %>
+
+      <% if guess.first < guess.second && guess.second < guess.third %>
+        Yes!
+      <% else %>
+        No.
+      <% end %>
+    </li>
+  <% end %>
 </ul>
 
 <form>
