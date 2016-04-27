@@ -16,4 +16,10 @@ class GuessesController < ApplicationController
 
     redirect_to("/all_guesses")
   end
+
+  def answer
+    @user_rule = params[:rule]
+
+    render("answer.html.erb")
+  end
 end
