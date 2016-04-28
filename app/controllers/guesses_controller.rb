@@ -22,4 +22,10 @@ class GuessesController < ApplicationController
 
     render("answer.html.erb")
   end
+
+  def reset
+    Guess.destroy_all
+
+    redirect_to("/all_guesses")
+  end
 end
