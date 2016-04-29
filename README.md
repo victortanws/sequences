@@ -1,5 +1,9 @@
 # Sequences
 
+In this project, we'll practice building forms and saving user inputs to a database.
+
+### [Here is our target.](https://fd-sequences.herokuapp.com/)
+
 ## Setup
 
 1. Clone this repository down to your computer.
