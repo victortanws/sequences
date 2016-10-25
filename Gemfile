@@ -40,7 +40,6 @@ group :development, :test do
 end
 
 group :development do
-  gem 'administrate'
   gem 'awesome_print'
   gem 'better_errors'
   gem 'binding_of_caller'
@@ -49,15 +48,9 @@ group :development do
   gem 'sqlite3'
 end
 
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
-end
-
 group :test do
   gem 'capybara'
   gem 'database_cleaner'
-  gem 'percy-capybara'
   gem 'shoulda-matchers'
   gem 'webmock'
 end
