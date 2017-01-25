@@ -65,11 +65,11 @@ feature "The index page" do
     expect(page).to have_button("I think I know it")
   end
 
-  it "has a reset link", points: 2 do
-    visit "/all_guesses"
-
-    expect(page).to have_link("Reset")
-  end
+  # it "has a reset link", points: 2 do
+  #   visit "/all_guesses"
+  #
+  #   expect(page).to have_link("Reset")
+  # end
 end
 
 feature "The answer form" do
@@ -117,24 +117,24 @@ feature "The sequence form" do
     expect(page).to have_content("3, 6, 12")
   end
 
-  it "displays multiple new sequences on the index page", points: 16 do
-    visit "/all_guesses"
-
-    fill_in("first", with: "3")
-    fill_in("second", with: "6")
-    fill_in("third", with: "12")
-
-    click_on "Check"
-
-    fill_in("first", with: "4")
-    fill_in("second", with: "8")
-    fill_in("third", with: "16")
-
-    click_on "Check"
-
-    expect(page).to have_content("3, 6, 12")
-    expect(page).to have_content("4, 8, 16")
-  end
+  # it "displays multiple new sequences on the index page", points: 16 do
+  #   visit "/all_guesses"
+  #
+  #   fill_in("first", with: "3")
+  #   fill_in("second", with: "6")
+  #   fill_in("third", with: "12")
+  #
+  #   click_on "Check"
+  #
+  #   fill_in("first", with: "4")
+  #   fill_in("second", with: "8")
+  #   fill_in("third", with: "16")
+  #
+  #   click_on "Check"
+  #
+  #   expect(page).to have_content("3, 6, 12")
+  #   expect(page).to have_content("4, 8, 16")
+  # end
 
   it "tells you whether the sequences obeys the rule", points: 4 do
     visit "/all_guesses"
@@ -145,13 +145,14 @@ feature "The sequence form" do
 
     click_on "Check"
 
+    expect(page).to have_content("3, 6, 12 Yes!")
+
     fill_in("first", with: "8")
     fill_in("second", with: "4")
     fill_in("third", with: "2")
 
     click_on "Check"
 
-    expect(page).to have_content("3, 6, 12 Yes!")
     expect(page).to have_content("8, 4, 2 No.")
   end
 end
