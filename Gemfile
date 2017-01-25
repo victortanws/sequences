@@ -1,8 +1,8 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+gem 'rails', '5.0.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -34,8 +34,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :development, :test do
   gem 'dotenv-rails'
   gem 'factory_girl_rails'
-  gem 'pry-byebug'
-  gem 'pry-rails'
   gem 'rspec-rails'
 end
 
@@ -43,8 +41,6 @@ group :development do
   gem 'awesome_print'
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'letter_opener'
-  gem 'quiet_assets'
   gem 'sqlite3'
 end
 
@@ -52,5 +48,4 @@ group :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'shoulda-matchers'
-  gem 'webmock'
 end
