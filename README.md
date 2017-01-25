@@ -18,7 +18,7 @@ We're going to build a simple clone of that site.
 
 ## Suggested Steps
 
-1. Create two RCAVs (use the Flowchart), one for `/all_guesses` and one for `/show_answer`. You can copy the content from `public/answer_mockup.html` and `public/guesses_mockup.html`.
+1. Create two RCAVs (use the [RCAV Flowchart](https://guides.firstdraft.com/rcav-flowchart.html)), one for `/all_guesses` and one for `/show_answer`. You can copy the content from `public/answer_mockup.html` and `public/guesses_mockup.html`.
 1. Start at the end and make the Answer form work to send the user from `/all_guesses` to `/show_answer` and parrot back the answer they submitted.
 1. Make the Guesses form work to send the user from `/all_guesses` back to `/all_guesses` and parrot back the guess they submitted.
 1. Add some logic to report whether the guess obeyed the rule or not.
