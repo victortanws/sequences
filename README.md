@@ -22,4 +22,4 @@ We're going to build a simple clone of that site.
 1. Start at the end and make the Answer form work to send the user from `/all_guesses` to `/show_answer` and parrot back the answer they submitted.
 1. Make the Guesses form work to send the user from `/all_guesses` back to `/all_guesses` and parrot back the guess they submitted.
 1. Add some logic to report whether the guess obeyed the rule or not.
-1. What would we need in order to store the history of all past guesses?
+1. What would we need in order to store the history of all past guesses? [The ability to write information to disk permanently.](https://guides.firstdraft.com/crud-with-ruby.html)
