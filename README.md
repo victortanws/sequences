@@ -6,7 +6,7 @@ Start by attempting [this quick puzzle](http://www.nytimes.com/interactive/2015/
 
 We're going to build a simple clone of that site.
 
-### [Here is our target.](https://fd-sequences.herokuapp.com/), but your version will differ slightly -- it won't save past guesses. It will only show the single most recent guess.
+### [Here is our target](https://fd-sequences.herokuapp.com/), but your version will differ slightly -- it won't save past guesses. It will only show the single most recent guess.
 
 ## Setup
 
