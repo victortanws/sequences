@@ -7,7 +7,6 @@ class GuessesController < ApplicationController
       elsif
         @right = "No."
       end
-    return @right
   end
 
   def guess
